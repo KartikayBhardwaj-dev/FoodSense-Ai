@@ -6,7 +6,7 @@ from src.prediction.predict import predict_images
 
 app = Flask(__name__)
 
-MODEL_PATH = "/Users/kartikaybhardwaj/FoodSense-Ai/artifacts/finetuned_resnet18.pth"
+MODEL_PATH = os.path.join("artifacts", "finetuned_resnet18.pth")
 print("Loading Model...")
 model, device = load_model(MODEL_PATH)
 print(f"Model Loaded on device: {device}")
