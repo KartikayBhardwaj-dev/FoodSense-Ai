@@ -1,0 +1,6 @@
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Optional: ignore notebooks on cloud runtime
+notebooks/
