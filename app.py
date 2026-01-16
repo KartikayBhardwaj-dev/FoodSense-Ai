@@ -13,7 +13,7 @@ print(f"Model Loaded on device: {device}")
 
 from flask import render_template
 
-@app.route("/", methods=["GET"])
+@app.route("/")
 def home():
     return render_template("index.html")
 
@@ -53,4 +53,4 @@ def predict():
         if os.path.exists(temp_path):
             os.remove(temp_path)
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
